@@ -1,0 +1,27 @@
+package: opms
+import:
+- package: github.com/BurntSushi/graphics-go
+  subpackages:
+  - graphics
+- package: github.com/astaxie/beego
+  version: ^1.12.1
+  subpackages:
+  - cache
+  - context
+  - orm
+  - utils/pagination
+- package: github.com/go-sql-driver/mysql
+  version: ^1.5.0
+- package: github.com/oliamb/cutter
+  version: ^0.2.2
+- package: github.com/shiena/ansicolor
+- package: github.com/zheng-ji/goSnowFlake
+- package: golang.org/x/crypto/acme/autocert
+  repo: https://github.com/golang/crypto.git
+  vcs: git
+
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: ^1.6.4
+  subpackages:
+  - convey
